@@ -1,7 +1,7 @@
 "use strict";
-(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[339],{
+(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[945],{
 
-/***/ 4339:
+/***/ 4945:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -14,7 +14,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 var runtime_core_esm_bundler = __webpack_require__(1758);
-;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/ImpressumPage.vue?vue&type=template&id=daba9a40
+;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/ImpressumPage.vue?vue&type=template&id=617d08b3
 
 const _hoisted_1 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("div", {
   class: "q-mb-md text-h3"
@@ -39,7 +39,7 @@ const _hoisted_14 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNod
 const _hoisted_15 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("p", null, [/*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("strong", null, "Nutzung des Kontaktformulars / Terminbuchung")], -1);
 const _hoisted_16 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("p", null, "Bei Fragen jeglicher Art bieten wir Ihnen die Möglichkeit, mit uns über ein auf der Webseite bereitgestelltes Formulare Kontakt aufzunehmen. Dabei ist mindestens die Angabe einer gültigen E-Mail-Adresse und Ihr Name erforderlich, damit wir wissen, von wem die Anfrage stammt und um diese beantworten zu können. Weitere Angaben können freiwillig getätigt werden. Die Datenverarbeitung zum Zwecke der Kontaktaufnahme mit uns erfolgt gem. Art. 6 Abs. 1 S. 1 lit. a DSGVO auf Grundlage Ihrer freiwillig erteilten Einwilligung. Die für die Benutzung der Formulare von uns erhobenen personenbezogenen Daten werden nach Erledigung der von Ihnen gestellten Anfrage automatisch gelöscht.", -1);
 const _hoisted_17 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("p", null, [/*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("strong", null, "Rechtlicher Vorbehalt")], -1);
-const _hoisted_18 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("p", null, "Alle Rechte der Veröffentlichung, insbesondere Vervielfältigung, Nachdruck, Speicherung in elektronischen Medien und Veröffentlichung auf anderen Internet-Präsenzen, auch auszugsweise, bedürfen der ausdrücklichen Genehmigung des Domaininhabers von www.vanzet-guitar-school.de . Auch die Verbreitung der Texte oder Grafiken auf jegliche Art, sei es elektronisch, mechanisch oder anderweitig, einschließlich durch Kopieren, Faxen, Aufnehmen, Umformulieren oder durch Nutzung eines Informations-, Speicher- oder Wiederbeschaffungssystems, ist ohne vorherige schriftliche Genehmigung durch die Cucumber Company GbR ausdrücklich untersagt.", -1);
+const _hoisted_18 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("p", null, "Alle Rechte der Veröffentlichung, insbesondere Vervielfältigung, Nachdruck, Speicherung in elektronischen Medien und Veröffentlichung auf anderen Internet-Präsenzen, auch auszugsweise, bedürfen der ausdrücklichen Genehmigung des Domaininhabers von www.proben-ohne-krach.de . Auch die Verbreitung der Texte oder Grafiken auf jegliche Art, sei es elektronisch, mechanisch oder anderweitig, einschließlich durch Kopieren, Faxen, Aufnehmen, Umformulieren oder durch Nutzung eines Informations-, Speicher- oder Wiederbeschaffungssystems, ist ohne vorherige schriftliche Genehmigung durch die Cucumber Company GbR ausdrücklich untersagt.", -1);
 const _hoisted_19 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("p", null, [/*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("strong", null, "Zuständige Behörde")], -1);
 const _hoisted_20 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("p", null, [/*#__PURE__*/(0,runtime_core_esm_bundler/* createTextVNode */.eW)("Finanzamt Chemnitz-Süd"), /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("br"), /*#__PURE__*/(0,runtime_core_esm_bundler/* createTextVNode */.eW)(" Steuer-Nr.: 214/577/00498")], -1);
 const _hoisted_21 = {
@@ -68,14 +68,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-;// CONCATENATED MODULE: ./src/pages/ImpressumPage.vue?vue&type=template&id=daba9a40
+;// CONCATENATED MODULE: ./src/pages/ImpressumPage.vue?vue&type=template&id=617d08b3
 
 ;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/ImpressumPage.vue?vue&type=script&lang=js
 /* harmony default export */ const ImpressumPagevue_type_script_lang_js = ({
   name: 'ImpressumPage',
   data() {
     return {
-      buildTime: "Fri, 02 Aug 2024 06:06:26 GMT"
+      buildTime: "Fri, 02 Aug 2024 06:09:25 GMT"
     };
   }
 });
@@ -111,4 +111,4 @@ runtime_auto_import_default()(ImpressumPagevue_type_script_lang_js, 'components'
 /***/ })
 
 }]);
-//# sourceMappingURL=339.4ee319ed.js.map
+//# sourceMappingURL=945.c38d1e1c.js.map

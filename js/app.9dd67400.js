@@ -88,7 +88,7 @@ const routes = [{
     }
   }, {
     path: 'impressum',
-    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(339)]).then(__webpack_require__.bind(__webpack_require__, 4339)),
+    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(945)]).then(__webpack_require__.bind(__webpack_require__, 4945)),
     meta: {
       showBackArrow: true,
       hideFooter: true
@@ -521,7 +521,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + (chunkId === 996 ? "chunk-common" : chunkId) + "." + {"17":"2239aaba","74":"a61b4dcf","169":"c1d6def4","339":"4ee319ed","487":"076f3f81","650":"b39c17e0","664":"77654472","666":"25e588ca","695":"3c2ec196","841":"766f323c","996":"c68f141a"}[chunkId] + ".js";
+/******/ 			return "js/" + (chunkId === 996 ? "chunk-common" : chunkId) + "." + {"17":"2239aaba","74":"a61b4dcf","169":"c1d6def4","487":"076f3f81","650":"59e90756","664":"77654472","666":"25e588ca","695":"3c2ec196","841":"766f323c","945":"c38d1e1c","996":"c68f141a"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -799,4 +799,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.8757e7ea.js.map
+//# sourceMappingURL=app.9dd67400.js.map
