@@ -1,0 +1,31 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+* {
+  touch-action: manipulation;
+  overscroll-behavior: contain;
+}
+
+#splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#q-app.loading #splash-screen {
+  display: none;
+}
+
+/*# sourceMappingURL=app.7d72f8ed.css.map*/
