@@ -35,9 +35,9 @@ const _hoisted_1 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode
     const quasar = (0,use_quasar/* default */.A)();
     const quasarVersion = (0,reactivity_esm_bundler/* ref */.KR)('');
     const hostingAddress = (0,reactivity_esm_bundler/* ref */.KR)(window.location.host);
-    const gitBranch = (0,reactivity_esm_bundler/* ref */.KR)("\"dark-layout\"" || 0);
-    const gitHash = (0,reactivity_esm_bundler/* ref */.KR)("\"dad378d31cbc2b148fa11488eda370c3517582ec\"" || 0);
-    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Wed, 07 Aug 2024 12:31:00 GMT" || 0);
+    const gitBranch = (0,reactivity_esm_bundler/* ref */.KR)("\"v2\"" || 0);
+    const gitHash = (0,reactivity_esm_bundler/* ref */.KR)("\"7a069846d719f162313eedb879e4fb1c736cdfb8\"" || 0);
+    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Wed, 07 Aug 2024 12:59:55 GMT" || 0);
     const clientPlatform = (0,reactivity_esm_bundler/* ref */.KR)('');
     const isFullscreen = (0,reactivity_esm_bundler/* ref */.KR)(false);
     const appMode = (0,reactivity_esm_bundler/* ref */.KR)('');
@@ -223,4 +223,4 @@ runtime_auto_import_default()(DebugInfovue_type_script_setup_true_lang_js, 'comp
 /***/ })
 
 }]);
-//# sourceMappingURL=650.0436897f.js.map
+//# sourceMappingURL=650.e5413cf7.js.map
