@@ -1,0 +1,23 @@
+
+.custom-btn .q-btn__content[data-v-49ef9fae] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn-content[data-v-49ef9fae] {
+  display: flex;
+  flex-direction: column;
+}
+.btn-heading[data-v-49ef9fae] {
+  font-weight: bold;
+  font-size: 1.4em; /* Adjust the size as needed */
+}
+.btn-description[data-v-49ef9fae] {
+  margin-top: 0.5em;
+  font-size: 0.9em; /* Adjust the size as needed */
+  text-align: left;
+  line-height: 1.2; /* Adjust the line spacing as needed */
+}
+
+
+/*# sourceMappingURL=874.9ac59cc0.css.map*/
