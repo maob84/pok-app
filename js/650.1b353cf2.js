@@ -37,7 +37,7 @@ const _hoisted_1 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode
     const hostingAddress = (0,reactivity_esm_bundler/* ref */.KR)(window.location.host);
     const gitBranch = (0,reactivity_esm_bundler/* ref */.KR)("\"v2\"" || 0);
     const gitHash = (0,reactivity_esm_bundler/* ref */.KR)("\"03a8059b39e29f9ad3189d3ead35b8db42b4c2c0\"" || 0);
-    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Tue, 27 Aug 2024 14:54:00 GMT" || 0);
+    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Tue, 27 Aug 2024 20:01:05 GMT" || 0);
     const clientPlatform = (0,reactivity_esm_bundler/* ref */.KR)('');
     const isFullscreen = (0,reactivity_esm_bundler/* ref */.KR)(false);
     const appMode = (0,reactivity_esm_bundler/* ref */.KR)('');
@@ -46,7 +46,7 @@ const _hoisted_1 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode
     const wakeLockActive = (0,reactivity_esm_bundler/* ref */.KR)(false);
     const debugState = (0,reactivity_esm_bundler/* ref */.KR)(true);
     const apiURL = (0,reactivity_esm_bundler/* ref */.KR)("http://192.168.0.102:8000");
-    const srvApiURL = (0,reactivity_esm_bundler/* ref */.KR)("http://81.201.156.237:8001");
+    const srvApiURL = (0,reactivity_esm_bundler/* ref */.KR)("https://srv.proben-ohne-krach.de:8001");
     (0,runtime_core_esm_bundler/* onMounted */.sV)(() => {
       quasarVersion.value = quasar.version;
       clientPlatform.value = Platform/* default */.Ay.is;
@@ -227,4 +227,4 @@ runtime_auto_import_default()(DebugInfovue_type_script_setup_true_lang_js, 'comp
 /***/ })
 
 }]);
-//# sourceMappingURL=650.75c9ed70.js.map
+//# sourceMappingURL=650.1b353cf2.js.map
