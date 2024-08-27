@@ -255,7 +255,7 @@ var axios = __webpack_require__(2303);
     },
     async fetchBookingSchedule() {
       try {
-        const url = `${"http://srv.proben-ohne-krach.de:8001"}/api/v1/bookings`;
+        const url = `${"http://81.201.156.237:8001"}/api/v1/bookings`;
         const response = await axios/* default */.A.get(url, {
           params: {
             start_date: this.selectedDate,
@@ -357,4 +357,4 @@ runtime_auto_import_default()(BookingCalendarvue_type_script_lang_js, 'component
 /***/ })
 
 }]);
-//# sourceMappingURL=355.c1d82809.js.map
+//# sourceMappingURL=355.b27b2687.js.map

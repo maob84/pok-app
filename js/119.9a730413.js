@@ -8,6 +8,7 @@
 /* harmony export */   $r: () => (/* binding */ toggleInstrumentMute),
 /* harmony export */   Bz: () => (/* binding */ turnTunerOn),
 /* harmony export */   Cl: () => (/* binding */ updateInstrumentPanorama),
+/* harmony export */   Eo: () => (/* binding */ getControlQrImage2),
 /* harmony export */   GY: () => (/* binding */ getRoomPresetCollections),
 /* harmony export */   LO: () => (/* binding */ selectInstrumentPreset),
 /* harmony export */   O8: () => (/* binding */ getCurrentRoomPresetCollection),
@@ -51,6 +52,9 @@ const getWifiQrImage = () => apiClient.get('/room/wifi-qr-code', {
   responseType: 'blob'
 });
 const getControlQrImage = () => apiClient.get('/room/control-qr-code', {
+  responseType: 'blob'
+});
+const getControlQrImage2 = () => apiClient.get('/room/control-qr-code2', {
   responseType: 'blob'
 });
 const getRoomStatus = () => apiClient.get('/room');
@@ -715,4 +719,4 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACR
 /***/ })
 
 }]);
-//# sourceMappingURL=119.ecb2a5bb.js.map
+//# sourceMappingURL=119.9a730413.js.map

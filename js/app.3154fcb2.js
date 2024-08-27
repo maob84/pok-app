@@ -162,7 +162,7 @@ const routes = [{
   component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(664)]).then(__webpack_require__.bind(__webpack_require__, 6664)),
   children: [{
     path: '',
-    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(754)]).then(__webpack_require__.bind(__webpack_require__, 8754))
+    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(473)]).then(__webpack_require__.bind(__webpack_require__, 4473))
   }, {
     path: '/desktop/room',
     component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(808)]).then(__webpack_require__.bind(__webpack_require__, 9808))
@@ -592,7 +592,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + {"17":"4cb1aaa1","45":"7a8dfaae","119":"ecb2a5bb","157":"05dbbabf","231":"31aab71b","293":"59e22ae8","309":"e9c87dfd","355":"c1d82809","407":"c8ad8c7b","487":"27db8714","650":"3cac4666","664":"685a840a","754":"3f0306bd","808":"c203d815","874":"504e46cd","887":"b8cf38af"}[chunkId] + ".js";
+/******/ 			return "js/" + chunkId + "." + {"17":"25b24bd5","45":"7a8dfaae","119":"9a730413","157":"145cd351","231":"3a74ae32","293":"bf9cb7be","309":"e9c87dfd","355":"b27b2687","407":"3d11b693","473":"e222a851","487":"27db8714","650":"75c9ed70","664":"0f6f1aff","808":"0c034de9","874":"2b58668b","887":"6fe90568"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -601,7 +601,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "css/" + chunkId + "." + {"17":"0f428680","119":"a00b8d90","157":"5b03a8f3","231":"ca9f2e5a","355":"51807f17","407":"6f1a86b5","754":"55c04925","874":"9ac59cc0"}[chunkId] + ".css";
+/******/ 			return "css/" + chunkId + "." + {"17":"0f428680","119":"a00b8d90","157":"5b03a8f3","231":"ca9f2e5a","355":"51807f17","407":"6f1a86b5","473":"b18098c4","874":"9ac59cc0"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -751,7 +751,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"17":1,"119":1,"157":1,"231":1,"355":1,"407":1,"754":1,"874":1};
+/******/ 			var cssChunks = {"17":1,"119":1,"157":1,"231":1,"355":1,"407":1,"473":1,"874":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -870,4 +870,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.d903afbb.js.map
+//# sourceMappingURL=app.3154fcb2.js.map

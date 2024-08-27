@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[754],{
+(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[473],{
 
 /***/ 6166:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -8,6 +8,7 @@
 /* harmony export */   $r: () => (/* binding */ toggleInstrumentMute),
 /* harmony export */   Bz: () => (/* binding */ turnTunerOn),
 /* harmony export */   Cl: () => (/* binding */ updateInstrumentPanorama),
+/* harmony export */   Eo: () => (/* binding */ getControlQrImage2),
 /* harmony export */   GY: () => (/* binding */ getRoomPresetCollections),
 /* harmony export */   LO: () => (/* binding */ selectInstrumentPreset),
 /* harmony export */   O8: () => (/* binding */ getCurrentRoomPresetCollection),
@@ -51,6 +52,9 @@ const getWifiQrImage = () => apiClient.get('/room/wifi-qr-code', {
   responseType: 'blob'
 });
 const getControlQrImage = () => apiClient.get('/room/control-qr-code', {
+  responseType: 'blob'
+});
+const getControlQrImage2 = () => apiClient.get('/room/control-qr-code2', {
   responseType: 'blob'
 });
 const getRoomStatus = () => apiClient.get('/room');
@@ -261,7 +265,7 @@ runtime_auto_import_default()(BackendStatusvue_type_script_lang_js, 'components'
 
 /***/ }),
 
-/***/ 8754:
+/***/ 4473:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -276,9 +280,9 @@ __webpack_require__.d(__webpack_exports__, {
 var runtime_core_esm_bundler = __webpack_require__(1758);
 // EXTERNAL MODULE: ./node_modules/@vue/shared/dist/shared.esm-bundler.js
 var shared_esm_bundler = __webpack_require__(8790);
-;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/desktop/HomePage.vue?vue&type=template&id=7bbe34a0&scoped=true
+;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/desktop/HomePage.vue?vue&type=template&id=b5b029ac&scoped=true
 
-const _withScopeId = n => ((0,runtime_core_esm_bundler/* pushScopeId */.Qi)("data-v-7bbe34a0"), n = n(), (0,runtime_core_esm_bundler/* popScopeId */.jt)(), n);
+const _withScopeId = n => ((0,runtime_core_esm_bundler/* pushScopeId */.Qi)("data-v-b5b029ac"), n = n(), (0,runtime_core_esm_bundler/* popScopeId */.jt)(), n);
 const _hoisted_1 = {
   class: "page-content"
 };
@@ -305,16 +309,22 @@ const _hoisted_9 = ["src"];
 const _hoisted_10 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("div", {
   class: "text-weight-bold q-mt-md"
 }, "Raumsteuerung", -1));
-const _hoisted_11 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("ol", null, [/*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("li", null, "Verbinde dich zuerst über den linken QR-Code mit unserem Proberaum-Wifi."), /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("li", null, "Anschließend kannst du den rechten QR-Code nutzen, um die Instrumente über dein Telefon/Tablet vom Platz aus zu steuern.")], -1));
-const _hoisted_12 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("div", {
+const _hoisted_11 = {
+  key: 1,
+  class: "q-ml-xl"
+};
+const _hoisted_12 = ["src"];
+const _hoisted_13 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("ol", null, [/*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("li", null, "Verbinde dich zuerst über den linken QR-Code mit unserem Proberaum-Wifi."), /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("li", null, "Anschließend kannst du den rechten QR-Code nutzen, um die Instrumente über dein Telefon/Tablet vom Platz aus zu steuern.")], -1));
+const _hoisted_14 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("div", {
   class: "text-h6"
 }, "Du brauchst Hilfe?", -1));
-const _hoisted_13 = {
+const _hoisted_15 = {
   class: "text-weight-bold"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_q_card_section = (0,runtime_core_esm_bundler/* resolveComponent */.g2)("q-card-section");
   const _component_backend_status = (0,runtime_core_esm_bundler/* resolveComponent */.g2)("backend-status");
+  const _component_q_btn = (0,runtime_core_esm_bundler/* resolveComponent */.g2)("q-btn");
   const _component_q_card = (0,runtime_core_esm_bundler/* resolveComponent */.g2)("q-card");
   const _component_q_page = (0,runtime_core_esm_bundler/* resolveComponent */.g2)("q-page");
   return (0,runtime_core_esm_bundler/* openBlock */.uX)(), (0,runtime_core_esm_bundler/* createBlock */.Wv)(_component_q_page, {
@@ -344,13 +354,23 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           src: $data.control_qr_image_url,
           alt: "App QR code",
           class: "q-mt-md"
-        }, null, 8, _hoisted_9)])) : (0,runtime_core_esm_bundler/* createCommentVNode */.Q3)("", true), _hoisted_10])]),
+        }, null, 8, _hoisted_9)])) : (0,runtime_core_esm_bundler/* createCommentVNode */.Q3)("", true), _hoisted_10]), (0,runtime_core_esm_bundler/* createElementVNode */.Lk)("div", null, [!$data.show_backup_qr ? ((0,runtime_core_esm_bundler/* openBlock */.uX)(), (0,runtime_core_esm_bundler/* createBlock */.Wv)(_component_q_btn, {
+          key: 0,
+          class: "q-ml-xl",
+          "no-caps": "",
+          label: "Backup QR",
+          onClick: _cache[0] || (_cache[0] = $event => $data.show_backup_qr = true)
+        })) : (0,runtime_core_esm_bundler/* createCommentVNode */.Q3)("", true), $data.control_qr_image_url2 && $data.show_backup_qr ? ((0,runtime_core_esm_bundler/* openBlock */.uX)(), (0,runtime_core_esm_bundler/* createElementBlock */.CE)("div", _hoisted_11, [(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("img", {
+          src: $data.control_qr_image_url2,
+          alt: "App QR code",
+          class: "q-mt-md"
+        }, null, 8, _hoisted_12)])) : (0,runtime_core_esm_bundler/* createCommentVNode */.Q3)("", true)])]),
         _: 1
       }), (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_card_section, null, {
-        default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [_hoisted_11]),
+        default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [_hoisted_13]),
         _: 1
       }), (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_card_section, null, {
-        default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [_hoisted_12, (0,runtime_core_esm_bundler/* createTextVNode */.eW)(" Bei Problemen bitte einfach unter "), (0,runtime_core_esm_bundler/* createElementVNode */.Lk)("span", _hoisted_13, (0,shared_esm_bundler/* toDisplayString */.v_)($data.contact_info), 1), (0,runtime_core_esm_bundler/* createTextVNode */.eW)(" melden. Wir helfen dann so schnell wie möglich weiter. ")]),
+        default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [_hoisted_14, (0,runtime_core_esm_bundler/* createTextVNode */.eW)(" Bei Problemen bitte einfach unter "), (0,runtime_core_esm_bundler/* createElementVNode */.Lk)("span", _hoisted_15, (0,shared_esm_bundler/* toDisplayString */.v_)($data.contact_info), 1), (0,runtime_core_esm_bundler/* createTextVNode */.eW)(" melden. Wir helfen dann so schnell wie möglich weiter. ")]),
         _: 1
       })]),
       _: 1
@@ -358,7 +378,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-;// CONCATENATED MODULE: ./src/pages/desktop/HomePage.vue?vue&type=template&id=7bbe34a0&scoped=true
+;// CONCATENATED MODULE: ./src/pages/desktop/HomePage.vue?vue&type=template&id=b5b029ac&scoped=true
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/web.url-search-params.delete.js
 var web_url_search_params_delete = __webpack_require__(7396);
@@ -383,8 +403,10 @@ var apiServices = __webpack_require__(6166);
   setup() {},
   data() {
     return {
+      show_backup_qr: false,
       wifi_qr_image_url: null,
       control_qr_image_url: null,
+      control_qr_image_url2: null,
       wifi_sid: 'ProbenOhneKrach',
       wifi_password: '12345678',
       contact_info: '0151 12345678'
@@ -418,6 +440,11 @@ var apiServices = __webpack_require__(6166);
       }).catch(error => {
         console.error('Error fetching control QR code:', error);
       });
+      (0,apiServices/* getControlQrImage2 */.Eo)().then(response => {
+        this.control_qr_image_url2 = URL.createObjectURL(response.data);
+      }).catch(error => {
+        console.error('Error fetching control QR code:', error);
+      });
     }
   },
   computed: {
@@ -437,6 +464,8 @@ var QPage = __webpack_require__(7716);
 var QCard = __webpack_require__(3316);
 // EXTERNAL MODULE: ./node_modules/quasar/src/components/card/QCardSection.js
 var QCardSection = __webpack_require__(4189);
+// EXTERNAL MODULE: ./node_modules/quasar/src/components/btn/QBtn.js
+var QBtn = __webpack_require__(6384);
 // EXTERNAL MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/runtime.auto-import.js
 var runtime_auto_import = __webpack_require__(8582);
 var runtime_auto_import_default = /*#__PURE__*/__webpack_require__.n(runtime_auto_import);
@@ -448,17 +477,18 @@ var runtime_auto_import_default = /*#__PURE__*/__webpack_require__.n(runtime_aut
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(HomePagevue_type_script_lang_js, [['render',render],['__scopeId',"data-v-7bbe34a0"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(HomePagevue_type_script_lang_js, [['render',render],['__scopeId',"data-v-b5b029ac"]])
 
 /* harmony default export */ const HomePage = (__exports__);
 ;
 
 
 
-runtime_auto_import_default()(HomePagevue_type_script_lang_js, 'components', {QPage: QPage/* default */.A,QCard: QCard/* default */.A,QCardSection: QCardSection/* default */.A});
+
+runtime_auto_import_default()(HomePagevue_type_script_lang_js, 'components', {QPage: QPage/* default */.A,QCard: QCard/* default */.A,QCardSection: QCardSection/* default */.A,QBtn: QBtn/* default */.A});
 
 
 /***/ })
 
 }]);
-//# sourceMappingURL=754.3f0306bd.js.map
+//# sourceMappingURL=473.e222a851.js.map

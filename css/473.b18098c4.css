@@ -1,5 +1,5 @@
 
-.page-with-background[data-v-7bbe34a0]::before {
+.page-with-background[data-v-b5b029ac]::before {
   content: '';
   position: absolute;
   top: -65px;
@@ -11,14 +11,14 @@
   background-repeat: no-repeat;
   z-index: 3000; /* Ensure this is higher than other content */
 }
-.page-with-background[data-v-7bbe34a0] {
+.page-with-background[data-v-b5b029ac] {
   position: relative;
   min-height: 100vh;
 }
-.page-content[data-v-7bbe34a0] {
+.page-content[data-v-b5b029ac] {
   position: relative;
   z-index: 1; /* Ensure this is lower than the background image */
 }
 
 
-/*# sourceMappingURL=754.55c04925.css.map*/
+/*# sourceMappingURL=473.b18098c4.css.map*/
