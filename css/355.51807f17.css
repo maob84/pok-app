@@ -1,0 +1,14 @@
+.booking-table .q-table__top,
+.booking-table .q-table__bottom,
+.booking-table thead tr:first-child th {
+  background-color: #910111;
+}
+.booking-table thead tr th {
+  position: sticky;
+  z-index: 1;
+}
+.booking-table thead tr:first-child th {
+  top: 0;
+}
+
+/*# sourceMappingURL=355.51807f17.css.map*/
