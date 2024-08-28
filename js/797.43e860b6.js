@@ -1,7 +1,7 @@
 "use strict";
-(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[355],{
+(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[797],{
 
-/***/ 3355:
+/***/ 8797:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -16,7 +16,7 @@ __webpack_require__.d(__webpack_exports__, {
 var runtime_core_esm_bundler = __webpack_require__(1758);
 // EXTERNAL MODULE: ./node_modules/@vue/shared/dist/shared.esm-bundler.js
 var shared_esm_bundler = __webpack_require__(8790);
-;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/BookingCalendar.vue?vue&type=template&id=7d6b4f41
+;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/BookingCalendar.vue?vue&type=template&id=bc88e31e
 
 const _hoisted_1 = {
   class: "row items-center justify-between q-mb-md"
@@ -158,7 +158,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-;// CONCATENATED MODULE: ./src/pages/BookingCalendar.vue?vue&type=template&id=7d6b4f41
+;// CONCATENATED MODULE: ./src/pages/BookingCalendar.vue?vue&type=template&id=bc88e31e
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
 var es_array_push = __webpack_require__(239);
@@ -202,7 +202,10 @@ var axios = __webpack_require__(2303);
           }),
           align: 'center',
           format: val => {
-            return val === null ? 'belegt' : `${val}€`;
+            return val === null ? 'belegt' : `${val.toLocaleString('de-DE', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            })}€`;
           },
           field: day
         });
@@ -216,7 +219,15 @@ var axios = __webpack_require__(2303);
           hour: `${hour}:00`
         };
         this.weekDays.forEach(day => {
-          row[day] = this.bookingSchedule['days'][day] && this.bookingSchedule['days'][day]['schedule'][hour] !== undefined ? this.bookingSchedule['days'][day]['schedule'][hour] : null;
+          if (this.bookingSchedule['days'][day] && this.bookingSchedule['days'][day]['schedule'][hour] !== undefined) {
+            if (this.bookingSchedule['days'][day]['schedule'][hour] != null) {
+              row[day] = this.bookingSchedule['days'][day]['schedule'][hour];
+            } else {
+              row[day] = null;
+            }
+          } else {
+            row[day] = null;
+          }
         });
         rows.push(row);
       }
@@ -357,4 +368,4 @@ runtime_auto_import_default()(BookingCalendarvue_type_script_lang_js, 'component
 /***/ })
 
 }]);
-//# sourceMappingURL=355.77e8fd3d.js.map
+//# sourceMappingURL=797.43e860b6.js.map
