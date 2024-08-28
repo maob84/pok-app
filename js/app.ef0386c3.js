@@ -12,15 +12,39 @@ var runtime_dom_esm_bundler = __webpack_require__(9104);
 var vue_plugin = __webpack_require__(5210);
 // EXTERNAL MODULE: ./node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
 var reactivity_esm_bundler = __webpack_require__(8734);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
+var es_array_push = __webpack_require__(239);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/web.url-search-params.delete.js
+var web_url_search_params_delete = __webpack_require__(7396);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/web.url-search-params.has.js
+var web_url_search_params_has = __webpack_require__(923);
+// EXTERNAL MODULE: ./node_modules/core-js/modules/web.url-search-params.size.js
+var web_url_search_params_size = __webpack_require__(9502);
 // EXTERNAL MODULE: ./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 var runtime_core_esm_bundler = __webpack_require__(1758);
+// EXTERNAL MODULE: ./node_modules/vue-router/dist/vue-router.mjs
+var vue_router = __webpack_require__(455);
 ;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/App.vue?vue&type=script&setup=true&lang=js
+
+
+
+
+
+
 
 /* harmony default export */ const Appvue_type_script_setup_true_lang_js = (/*#__PURE__*/Object.assign({
   name: 'App'
 }, {
   __name: 'App',
   setup(__props) {
+    const router = (0,vue_router/* useRouter */.rd)();
+    (0,runtime_core_esm_bundler/* onMounted */.sV)(() => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const redirectPath = urlParams.get('redirect');
+      if (redirectPath === 'buchen') {
+        router.push('/booking');
+      }
+    });
     return (_ctx, _cache) => {
       const _component_router_view = (0,runtime_core_esm_bundler/* resolveComponent */.g2)("router-view");
       return (0,runtime_core_esm_bundler/* openBlock */.uX)(), (0,runtime_core_esm_bundler/* createBlock */.Wv)(_component_router_view);
@@ -62,8 +86,6 @@ var dist_pinia = __webpack_require__(1555);
 
   return pinia;
 }));
-// EXTERNAL MODULE: ./node_modules/vue-router/dist/vue-router.mjs
-var vue_router = __webpack_require__(455);
 ;// CONCATENATED MODULE: ./src/router/routes.js
 const routes = [{
   path: '/',
@@ -592,7 +614,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + {"17":"25b24bd5","45":"7a8dfaae","119":"9a730413","157":"145cd351","231":"3a74ae32","293":"bf9cb7be","309":"e9c87dfd","355":"77e8fd3d","407":"3d11b693","473":"e222a851","487":"27db8714","650":"3e154a1f","664":"0f6f1aff","808":"0c034de9","874":"2b58668b","887":"6fe90568"}[chunkId] + ".js";
+/******/ 			return "js/" + chunkId + "." + {"17":"25b24bd5","45":"7a8dfaae","119":"9a730413","157":"145cd351","231":"3a74ae32","293":"bf9cb7be","309":"e9c87dfd","355":"77e8fd3d","407":"3d11b693","473":"e222a851","487":"27db8714","650":"ad4481fd","664":"0f6f1aff","808":"0c034de9","874":"2b58668b","887":"6fe90568"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -870,4 +892,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.4a1d941a.js.map
+//# sourceMappingURL=app.ef0386c3.js.map
