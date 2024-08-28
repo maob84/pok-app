@@ -124,7 +124,7 @@ const routes = [{
     }
   }, {
     path: 'booking',
-    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(797)]).then(__webpack_require__.bind(__webpack_require__, 8797)),
+    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(230)]).then(__webpack_require__.bind(__webpack_require__, 230)),
     meta: {
       showBackArrow: true,
       hideFooter: true,
@@ -132,7 +132,7 @@ const routes = [{
     }
   }, {
     path: 'buchen',
-    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(797)]).then(__webpack_require__.bind(__webpack_require__, 8797)),
+    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(230)]).then(__webpack_require__.bind(__webpack_require__, 230)),
     meta: {
       showBackArrow: false,
       hideFooter: true,
@@ -614,7 +614,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + {"17":"25b24bd5","45":"7a8dfaae","119":"9a730413","157":"145cd351","231":"3a74ae32","293":"bf9cb7be","309":"e9c87dfd","407":"3d11b693","473":"e222a851","487":"27db8714","650":"2e987f5c","664":"0f6f1aff","797":"43e860b6","808":"0c034de9","874":"2b58668b","887":"6fe90568"}[chunkId] + ".js";
+/******/ 			return "js/" + chunkId + "." + {"17":"25b24bd5","45":"7a8dfaae","119":"9a730413","157":"145cd351","230":"2246f09c","231":"3a74ae32","293":"bf9cb7be","309":"e9c87dfd","407":"3d11b693","473":"e222a851","487":"27db8714","650":"c2b67d3e","664":"0f6f1aff","808":"0c034de9","874":"2b58668b","887":"6fe90568"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -623,7 +623,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "css/" + chunkId + "." + {"17":"0f428680","119":"a00b8d90","157":"5b03a8f3","231":"ca9f2e5a","407":"6f1a86b5","473":"b18098c4","797":"961337ef","874":"9ac59cc0"}[chunkId] + ".css";
+/******/ 			return "css/" + chunkId + "." + {"17":"0f428680","119":"a00b8d90","157":"5b03a8f3","230":"8158a25d","231":"ca9f2e5a","407":"6f1a86b5","473":"b18098c4","874":"9ac59cc0"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -773,7 +773,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"17":1,"119":1,"157":1,"231":1,"407":1,"473":1,"797":1,"874":1};
+/******/ 			var cssChunks = {"17":1,"119":1,"157":1,"230":1,"231":1,"407":1,"473":1,"874":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -892,4 +892,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.49c197b2.js.map
+//# sourceMappingURL=app.98e79e26.js.map

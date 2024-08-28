@@ -1,7 +1,7 @@
 "use strict";
-(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[797],{
+(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[230],{
 
-/***/ 8797:
+/***/ 230:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -16,7 +16,7 @@ __webpack_require__.d(__webpack_exports__, {
 var runtime_core_esm_bundler = __webpack_require__(1758);
 // EXTERNAL MODULE: ./node_modules/@vue/shared/dist/shared.esm-bundler.js
 var shared_esm_bundler = __webpack_require__(8790);
-;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/BookingCalendar.vue?vue&type=template&id=bc88e31e
+;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/BookingCalendar.vue?vue&type=template&id=9248cce0
 
 const _hoisted_1 = {
   class: "row items-center justify-between q-mb-md"
@@ -130,7 +130,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                 "width": "50px"
               }
             }, {
-              default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [col.value == '18€' ? ((0,runtime_core_esm_bundler/* openBlock */.uX)(), (0,runtime_core_esm_bundler/* createBlock */.Wv)(_component_q_badge, {
+              default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [col.value == '19€' ? ((0,runtime_core_esm_bundler/* openBlock */.uX)(), (0,runtime_core_esm_bundler/* createBlock */.Wv)(_component_q_badge, {
                 key: 0,
                 rounded: "",
                 color: "orange",
@@ -158,7 +158,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-;// CONCATENATED MODULE: ./src/pages/BookingCalendar.vue?vue&type=template&id=bc88e31e
+;// CONCATENATED MODULE: ./src/pages/BookingCalendar.vue?vue&type=template&id=9248cce0
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
 var es_array_push = __webpack_require__(239);
@@ -368,4 +368,4 @@ runtime_auto_import_default()(BookingCalendarvue_type_script_lang_js, 'component
 /***/ })
 
 }]);
-//# sourceMappingURL=797.43e860b6.js.map
+//# sourceMappingURL=230.2246f09c.js.map
