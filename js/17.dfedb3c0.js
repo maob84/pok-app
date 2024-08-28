@@ -204,15 +204,11 @@ function releaseWakeLock() {
 var vue_router = __webpack_require__(455);
 ;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/layouts/MainLayout.vue?vue&type=script&setup=true&lang=js
 
-const _withScopeId = n => ((0,runtime_core_esm_bundler/* pushScopeId */.Qi)("data-v-439f1a39"), n = n(), (0,runtime_core_esm_bundler/* popScopeId */.jt)(), n);
+const _withScopeId = n => ((0,runtime_core_esm_bundler/* pushScopeId */.Qi)("data-v-07c260a7"), n = n(), (0,runtime_core_esm_bundler/* popScopeId */.jt)(), n);
 const _hoisted_1 = {
   class: "row no-wrap"
 };
 const _hoisted_2 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("img", {
-  src: "icons/icon-128x128.png",
-  alt: "Proben ohne Krach"
-}, null, -1));
-const _hoisted_3 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("img", {
   src: "icons/icon-128x128.png",
   alt: "Proben ohne Krach"
 }, null, -1));
@@ -242,6 +238,9 @@ const _hoisted_3 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_
     }
     function openHomePage() {
       window.open('http://www.proben-ohne-krach.de/', '_blank');
+    }
+    function goToMainSite() {
+      window.open('https://app.proben-ohne-krach.de/', '_blank');
     }
     function openLiveSessionPage() {
       window.open('https://www.proben-ohne-krach.de/live-session-take-a-seat-/', '_blank');
@@ -287,7 +286,11 @@ const _hoisted_3 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_
               key: 1,
               class: "float-right"
             }, {
-              default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [_hoisted_2]),
+              default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("img", {
+                src: "icons/icon-128x128.png",
+                alt: "Proben ohne Krach",
+                onClick: goToMainSite
+              })]),
               _: 1
             })) : (0,runtime_core_esm_bundler/* createCommentVNode */.Q3)("", true), _ctx.$route.meta.title ? ((0,runtime_core_esm_bundler/* openBlock */.uX)(), (0,runtime_core_esm_bundler/* createBlock */.Wv)(_component_q_toolbar_title, {
               key: 2,
@@ -315,7 +318,7 @@ const _hoisted_3 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,runtime_core_
             }), (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_space), (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_avatar, {
               class: "float-right"
             }, {
-              default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [_hoisted_3]),
+              default: (0,runtime_core_esm_bundler/* withCtx */.k6)(() => [_hoisted_2]),
               _: 1
             })]),
             _: 1
@@ -598,7 +601,7 @@ var runtime_auto_import_default = /*#__PURE__*/__webpack_require__.n(runtime_aut
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(MainLayoutvue_type_script_setup_true_lang_js, [['__scopeId',"data-v-439f1a39"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.A)(MainLayoutvue_type_script_setup_true_lang_js, [['__scopeId',"data-v-07c260a7"]])
 
 /* harmony default export */ const MainLayout = (__exports__);
 ;
@@ -626,4 +629,4 @@ runtime_auto_import_default()(MainLayoutvue_type_script_setup_true_lang_js, 'com
 /***/ })
 
 }]);
-//# sourceMappingURL=17.25b24bd5.js.map
+//# sourceMappingURL=17.dfedb3c0.js.map

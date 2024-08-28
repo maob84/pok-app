@@ -37,7 +37,7 @@ const _hoisted_1 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode
     const hostingAddress = (0,reactivity_esm_bundler/* ref */.KR)(window.location.host);
     const gitBranch = (0,reactivity_esm_bundler/* ref */.KR)("\"v2\"" || 0);
     const gitHash = (0,reactivity_esm_bundler/* ref */.KR)("\"ebef10937e2e0d3ac84adb7ea677a90e6b055411\"" || 0);
-    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Wed, 28 Aug 2024 08:48:47 GMT" || 0);
+    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Wed, 28 Aug 2024 08:53:16 GMT" || 0);
     const clientPlatform = (0,reactivity_esm_bundler/* ref */.KR)('');
     const isFullscreen = (0,reactivity_esm_bundler/* ref */.KR)(false);
     const appMode = (0,reactivity_esm_bundler/* ref */.KR)('');
@@ -227,4 +227,4 @@ runtime_auto_import_default()(DebugInfovue_type_script_setup_true_lang_js, 'comp
 /***/ })
 
 }]);
-//# sourceMappingURL=650.307bb25b.js.map
+//# sourceMappingURL=650.139fb8d7.js.map
