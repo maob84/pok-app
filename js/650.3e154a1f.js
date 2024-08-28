@@ -36,8 +36,8 @@ const _hoisted_1 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode
     const quasarVersion = (0,reactivity_esm_bundler/* ref */.KR)('');
     const hostingAddress = (0,reactivity_esm_bundler/* ref */.KR)(window.location.host);
     const gitBranch = (0,reactivity_esm_bundler/* ref */.KR)("\"v2\"" || 0);
-    const gitHash = (0,reactivity_esm_bundler/* ref */.KR)("\"03a8059b39e29f9ad3189d3ead35b8db42b4c2c0\"" || 0);
-    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Tue, 27 Aug 2024 20:01:05 GMT" || 0);
+    const gitHash = (0,reactivity_esm_bundler/* ref */.KR)("\"df160e8dc8f0e310bdfc012a46363c699f2976b1\"" || 0);
+    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Wed, 28 Aug 2024 07:38:45 GMT" || 0);
     const clientPlatform = (0,reactivity_esm_bundler/* ref */.KR)('');
     const isFullscreen = (0,reactivity_esm_bundler/* ref */.KR)(false);
     const appMode = (0,reactivity_esm_bundler/* ref */.KR)('');
@@ -227,4 +227,4 @@ runtime_auto_import_default()(DebugInfovue_type_script_setup_true_lang_js, 'comp
 /***/ })
 
 }]);
-//# sourceMappingURL=650.1b353cf2.js.map
+//# sourceMappingURL=650.3e154a1f.js.map
