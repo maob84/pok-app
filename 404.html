@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        const path = window.location.pathname.slice(1);
+        let redirectUrl = '/index.html';
+        
+        if (path === 'buchen') {
+            redirectUrl += '?redirect=booking';
+        } else if (path) {
+            redirectUrl += `?redirect=${path}`;
+        }
+        
+        window.location.replace(redirectUrl);
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, please click <a href="/index.html">here</a>.</p>
+</body>
+</html>
