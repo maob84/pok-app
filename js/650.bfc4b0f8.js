@@ -37,7 +37,7 @@ const _hoisted_1 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode
     const hostingAddress = (0,reactivity_esm_bundler/* ref */.KR)(window.location.host);
     const gitBranch = (0,reactivity_esm_bundler/* ref */.KR)("\"recorder\"" || 0);
     const gitHash = (0,reactivity_esm_bundler/* ref */.KR)("\"3278e2c76084662f3ac2f425ec741ac39e03d7eb\"" || 0);
-    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Mon, 02 Sep 2024 14:36:30 GMT" || 0);
+    const buildTimestamp = (0,reactivity_esm_bundler/* ref */.KR)("Mon, 02 Sep 2024 14:47:05 GMT" || 0);
     const clientPlatform = (0,reactivity_esm_bundler/* ref */.KR)('');
     const isFullscreen = (0,reactivity_esm_bundler/* ref */.KR)(false);
     const appMode = (0,reactivity_esm_bundler/* ref */.KR)('');
@@ -227,4 +227,4 @@ runtime_auto_import_default()(DebugInfovue_type_script_setup_true_lang_js, 'comp
 /***/ })
 
 }]);
-//# sourceMappingURL=650.3bfaa7ae.js.map
+//# sourceMappingURL=650.bfc4b0f8.js.map
