@@ -92,7 +92,7 @@ const routes = [{
   component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(17)]).then(__webpack_require__.bind(__webpack_require__, 5017)),
   children: [{
     path: '',
-    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(436)]).then(__webpack_require__.bind(__webpack_require__, 7436)),
+    component: () => Promise.all(/* import() */[__webpack_require__.e(121), __webpack_require__.e(405)]).then(__webpack_require__.bind(__webpack_require__, 4405)),
     meta: {
       showHeader: true
     }
@@ -483,6 +483,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   api: () => (/* binding */ api),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   recApi: () => (/* binding */ recApi),
 /* harmony export */   srvApi: () => (/* binding */ srvApi)
 /* harmony export */ });
 /* harmony import */ var quasar_wrappers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1573);
@@ -502,6 +503,9 @@ const api = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
 const srvApi = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
   baseURL: "https://srv.proben-ohne-krach.de:8001"
 });
+const recApi = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
+  baseURL: "https://srv.proben-ohne-krach.de:8002"
+});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,quasar_wrappers__WEBPACK_IMPORTED_MODULE_1__/* .boot */ .zj)(({
   app
 }) => {
@@ -516,6 +520,7 @@ const srvApi = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
   //       so you can easily perform requests against your app's API
 
   app.config.globalProperties.$srvApi = srvApi;
+  app.config.globalProperties.$recApi = recApi;
 }));
 
 
@@ -642,7 +647,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + {"17":"f6df8746","45":"318fecc4","119":"0027edf1","157":"eae296b0","231":"d2c6a3e1","286":"c1dd1d53","293":"b139f7f4","309":"d34d7e62","331":"fd00e503","407":"12532ced","436":"c56b22ac","473":"de76192d","487":"9e4263cf","564":"2aea7e3c","650":"bfc4b0f8","664":"39cc0e81","808":"c19a0f04","874":"93d73dfc"}[chunkId] + ".js";
+/******/ 			return "js/" + chunkId + "." + {"17":"a799ffbb","45":"318fecc4","119":"74b0d366","157":"5d71060d","231":"b64c0b2f","286":"c1dd1d53","293":"3b053090","309":"d34d7e62","331":"e9477497","405":"3061f21a","407":"07fba349","473":"7b435568","487":"9e4263cf","564":"a7e98ba3","650":"7aa5a574","664":"ea103527","808":"a09cc773","874":"662af6fd"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -920,4 +925,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.2a1ea722.js.map
+//# sourceMappingURL=app.8ad03132.js.map

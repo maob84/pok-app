@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[436],{
+(globalThis["webpackChunkpok"] = globalThis["webpackChunkpok"] || []).push([[405],{
 
 /***/ 6166:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -30,7 +30,7 @@
 /* harmony export */   x_: () => (/* binding */ api_playRecording),
 /* harmony export */   xr: () => (/* binding */ turnTunerOff)
 /* harmony export */ });
-/* unused harmony exports apiClient, getTunerState */
+/* unused harmony exports apiClient, recClient, getTunerState */
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2303);
 
 
@@ -41,6 +41,12 @@
 const apiUrl = "http://192.168.0.102:8000";
 const apiClient = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
   baseURL: apiUrl,
+  headers: {
+    'Content-Type': 'application/json'
+  }
+});
+const recClient = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
+  baseURL: "https://srv.proben-ohne-krach.de:8002",
   headers: {
     'Content-Type': 'application/json'
   }
@@ -93,18 +99,18 @@ const turnTunerOff = id => apiClient.post(`/instruments/${id}/tuner/off`);
 const getTuning = id => apiClient.get(`/instruments/${id}/tuning`);
 
 // Recorder services
-const api_startRecording = (name, start_time) => apiClient.post('/recorder/start', null, {
+const api_startRecording = (name, start_time) => recClient.post('/recorder/start', null, {
   params: {
     name: name,
     start_time: start_time
   }
 });
-const api_stopRecording = () => apiClient.post('/recorder/stop');
-const api_playRecording = id => apiClient.post(`/recorder/play/${id}`);
-const api_deleteRecording = id => apiClient.delete(`/recorder/delete/${id}`);
-const api_getRecordings = id => apiClient.get('/recorder/list-recordings');
-const api_getRecorderStatus = () => apiClient.get('/recorder/status');
-const api_stopPlayback = () => apiClient.post('/recorder/stop-playback');
+const api_stopRecording = () => recClient.post('/recorder/stop');
+const api_playRecording = id => recClient.post(`/recorder/play/${id}`);
+const api_deleteRecording = id => recClient.delete(`/recorder/delete/${id}`);
+const api_getRecordings = id => recClient.get('/recorder/list-recordings');
+const api_getRecorderStatus = () => recClient.get('/recorder/status');
+const api_stopPlayback = () => recClient.post('/recorder/stop-playback');
 
 /***/ }),
 
@@ -185,7 +191,7 @@ const useInstrumentStore = (0,pinia__WEBPACK_IMPORTED_MODULE_2__/* .defineStore 
 
 /***/ }),
 
-/***/ 7436:
+/***/ 4405:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -198,14 +204,14 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 var runtime_core_esm_bundler = __webpack_require__(1758);
-;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/HomePage.vue?vue&type=template&id=592dd2a3
+;// CONCATENATED MODULE: ./node_modules/@quasar/app-webpack/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app-webpack/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/HomePage.vue?vue&type=template&id=762033e0
 
 const _hoisted_1 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("div", {
   class: "q-mt-md q-mb-md text-center"
 }, " Du bist erfolgreich mit dem Proberaum verbunden und kannst jetzt starten. ", -1);
 const _hoisted_2 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("div", {
   class: "q-mt-md q-mb-md text-center"
-}, " Nutze unsere Herbstaktion mit 20% Rabatt auf alle Proberaumbuchungen! Du willst in Studioqualität üben, mit deiner Band proben, eine Aufnahme erstellen oder einfach nur eine tolle Zeit verbringen? ", -1);
+}, " Nutze unsere Herbstaktion mit 20% Rabatt auf alle Proberaumbuchungen! Gilt im Zeitraum vom 1.9.2024 bis 31.12.2024. ", -1);
 const _hoisted_3 = /*#__PURE__*/(0,runtime_core_esm_bundler/* createElementVNode */.Lk)("div", {
   class: "q-mt-md q-mb-md text-center"
 }, " Live Session - Take a seat! Einmal im Monat hast du die Möglichkeit, an unserer inspirierenden Live-Session teilzunehmen. ", -1);
@@ -269,15 +275,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
               name: "calendar_month",
               color: "primary",
               size: "56px"
-            }), _hoisted_2, (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_btn, {
+            }), _hoisted_2, (0,runtime_core_esm_bundler/* createTextVNode */.eW)(), (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_btn, {
               "no-caps": "",
               color: "primary",
               size: "md",
-              label: "Proberaum buchen",
+              label: "Proberaum\n             buchen",
               to: "/booking"
             })]),
             _: 1
-          }), (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_carousel_slide, {
+          }), (0,runtime_core_esm_bundler/* createTextVNode */.eW)(), (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_carousel_slide, {
             name: "news",
             class: "column no-wrap flex-center"
           }, {
@@ -285,7 +291,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
               name: "highlight",
               color: "primary",
               size: "56px"
-            }), _hoisted_3, (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_btn, {
+            }), (0,runtime_core_esm_bundler/* createTextVNode */.eW)(), _hoisted_3, (0,runtime_core_esm_bundler/* createVNode */.bF)(_component_q_btn, {
               "no-caps": "",
               color: "primary",
               size: "md",
@@ -332,7 +338,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   });
 }
-;// CONCATENATED MODULE: ./src/pages/HomePage.vue?vue&type=template&id=592dd2a3
+;// CONCATENATED MODULE: ./src/pages/HomePage.vue?vue&type=template&id=762033e0
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
 var es_array_push = __webpack_require__(239);
@@ -474,4 +480,4 @@ runtime_auto_import_default()(HomePagevue_type_script_lang_js, 'components', {QP
 /***/ })
 
 }]);
-//# sourceMappingURL=436.c56b22ac.js.map
+//# sourceMappingURL=405.3061f21a.js.map

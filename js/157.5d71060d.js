@@ -30,7 +30,7 @@
 /* harmony export */   x_: () => (/* binding */ api_playRecording),
 /* harmony export */   xr: () => (/* binding */ turnTunerOff)
 /* harmony export */ });
-/* unused harmony exports apiClient, getTunerState */
+/* unused harmony exports apiClient, recClient, getTunerState */
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2303);
 
 
@@ -41,6 +41,12 @@
 const apiUrl = "http://192.168.0.102:8000";
 const apiClient = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
   baseURL: apiUrl,
+  headers: {
+    'Content-Type': 'application/json'
+  }
+});
+const recClient = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A.create({
+  baseURL: "https://srv.proben-ohne-krach.de:8002",
   headers: {
     'Content-Type': 'application/json'
   }
@@ -93,18 +99,18 @@ const turnTunerOff = id => apiClient.post(`/instruments/${id}/tuner/off`);
 const getTuning = id => apiClient.get(`/instruments/${id}/tuning`);
 
 // Recorder services
-const api_startRecording = (name, start_time) => apiClient.post('/recorder/start', null, {
+const api_startRecording = (name, start_time) => recClient.post('/recorder/start', null, {
   params: {
     name: name,
     start_time: start_time
   }
 });
-const api_stopRecording = () => apiClient.post('/recorder/stop');
-const api_playRecording = id => apiClient.post(`/recorder/play/${id}`);
-const api_deleteRecording = id => apiClient.delete(`/recorder/delete/${id}`);
-const api_getRecordings = id => apiClient.get('/recorder/list-recordings');
-const api_getRecorderStatus = () => apiClient.get('/recorder/status');
-const api_stopPlayback = () => apiClient.post('/recorder/stop-playback');
+const api_stopRecording = () => recClient.post('/recorder/stop');
+const api_playRecording = id => recClient.post(`/recorder/play/${id}`);
+const api_deleteRecording = id => recClient.delete(`/recorder/delete/${id}`);
+const api_getRecordings = id => recClient.get('/recorder/list-recordings');
+const api_getRecorderStatus = () => recClient.get('/recorder/status');
+const api_stopPlayback = () => recClient.post('/recorder/stop-playback');
 
 /***/ }),
 
@@ -457,4 +463,4 @@ runtime_auto_import_default()(TunerPagevue_type_script_lang_js, 'components', {Q
 /***/ })
 
 }]);
-//# sourceMappingURL=157.eae296b0.js.map
+//# sourceMappingURL=157.5d71060d.js.map
